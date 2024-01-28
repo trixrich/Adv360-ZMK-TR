@@ -17,20 +17,6 @@
             bindings = <&kp RET>;
         };
 
-        greenshotF: greenshotcap {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(F))>;
-            label = "GREENSHOTCAP";
-        };
-
-        greenshotT: greenshotT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(T))>;
-            label = "GREENSHOTT";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -53,8 +39,8 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2            &kp N3    &kp N4     &kp N5  &mo 3                                                               &tog 1       &kp N6  &kp N7         &kp N8      &kp N9    &kp N0           &kp MINUS
-&kp TAB    &kp Q      &kp W             &kp E     &kp R      &kp T   &greenshotF                                                         &none        &kp Y   &kp U          &kp I       &kp O     &kp P            &kp BSLH
-&kp LCTRL  &kp A      &kp S             &kp D     &kp F      &kp G   &greenshotT  &kp LEFT_WIN  &kp LEFT_ALT      &kp LGUI   &kp ESCAPE  &none        &kp H   &kp J          &kp K       &kp L     &lt 2 SEMICOLON  &kp SQT
+&kp TAB    &kp Q      &kp W             &kp E     &kp R      &kp T   &trans                                                              &none        &kp Y   &kp U          &kp I       &kp O     &kp P            &kp BSLH
+&kp LCTRL  &kp A      &kp S             &kp D     &kp F      &kp G   &trans       &kp LEFT_WIN  &kp LEFT_ALT      &kp LGUI   &kp ESCAPE  &none        &kp H   &kp J          &kp K       &kp L     &lt 2 SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z      &kp X             &kp C     &kp V      &kp B                              &kp HOME          &kp PG_UP                           &kp N   &kp M          &kp COMMA   &kp DOT   &kp FSLH         &kp RSHFT
 &mo 2      &kp TILDE  &kp K_PLAY_PAUSE  &kp LEFT  &kp RIGHT          &lt 4 SPACE  &kp ENTER     &kp END           &kp PG_DN  &kp ENTER   &lt 4 SPACE          &kp BACKSPACE  &kp DELETE  &kp LBKT  &kp RBKT         &mo 2
             >;
